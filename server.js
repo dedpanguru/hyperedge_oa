@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
     res.send({message:'You are sane'})
 })
 const port = process.env.PORT || 3000
-app.listen(`http://${process.env.HOST}:${port}/`, ()=>{
+app.listen(port, ()=>{
     console.log(`server started on port ${port}`)
 })
